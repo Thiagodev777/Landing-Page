@@ -1,0 +1,151 @@
+* { 
+    padding: 0%;
+    margin: 0%;
+}
+
+/*HEADER-START*/
+
+header {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+
+header .top-assets ul {
+    display: flex;
+}
+
+header .top-assets a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+header .top-assets a :hover {
+    color: #CCC;
+}
+
+header .top-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+/*HEADER-END*/ 
+
+/*MAIN-START*/
+.center-page {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #B3B3B3;
+}
+.input-control {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-control h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    font-size: 1.8em;
+}
+
+.input-control input {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.input-control button {
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    display: inline-block;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.img-control img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+}
+/*HEADER-END*/
+
+
+/* FOOTER-START */
+footer {
+    width: 100%;
+    background-color: #696969;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 83px;
+}
+footer img {
+    width: 15px;
+}
+footer a {
+    color: #fff;
+    padding: 30px 0;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ccc;
+}
+/*FOOTER-END*/
+
+
+/*MEDIA-START*/
+@media only screen and (max-width: 820px) {
+    .img-control img {
+        margin: 0 30px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .img-control img {
+        margin: 0 30px;
+    }
+}
+@media only screen and (max-width: 703px) {
+    .img-control img {
+        width: 300px;
+        height: 400px;
+    }
+    header .top-assets a {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 589px) {
+    .img-control img {
+        display: none;
+    }
+    .input-control {
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 435px) {
+    header .top-assets {
+        display: none;
+    }
+}
+/*MEDIA-END*/
